@@ -1,0 +1,48 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@headlessui/react": "^1.4.0",
+    "@heroicons/react": "^1.0.3",
+    "@tailwindcss/forms": "^0.3.3",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.15",
+    "postcss-cli": "^8.3.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-hot-loader": "^4.13.0",
+    "react-scripts": "^4.0.3",
+    "react-table": "^7.7.0",
+    "tailwindcss": "^2.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "file-loader": "^6.2.0",
+    "node-sass": "^6.0.0",
+    "sass": "^1.32.13",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.14.0",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode development",
+    "tailwind-build": "postcss src/style/tailwind/tailwind.css -o dist/style/tailwind/tailwindBuild.css",
+    "tailwind-watch": "postcss src/style/tailwind/tailwind.css -o dist/style/tailwind/tailwindBuild.css --watch",
+    "scss": "node-sass --watch src/style/scss/mainScss.scss -o dist/style/scss-compiled"
+  },
+  "author": "",
+  "license": "ISC"
+}
